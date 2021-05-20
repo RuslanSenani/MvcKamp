@@ -20,7 +20,7 @@ namespace MvcKamp.Controllers
                 {
                     categoty = ca,
                     heading = he
-                }).Count(x => x.categoty.CategoryName.Contains("Film"));
+                }).Count(x => x.categoty.CategoryName.Contains("Developer"));
 
 
 
