@@ -1,16 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
 using System.Web;
 using System.Web.Mvc;
 using DataAccesLayer.Concrete;
+using EntityLayer.Concrete;
 
 namespace MvcKamp.Controllers
 {
     public class StatisticsController : Controller
     {
         private readonly Context _context = new Context();
-        //En fazla başlığa sahip kategori adı
         public ActionResult Index()
         {
             ViewBag.WriterCount = _context.Writers.Count(x => x.WriterName.Contains("a"));
@@ -21,10 +22,6 @@ namespace MvcKamp.Controllers
                     categoty = ca,
                     heading = he
                 }).Count(x => x.categoty.CategoryName.Contains("Developer"));
-
-
-
-
             return View();
         }
     }
