@@ -29,19 +29,22 @@ namespace DataAccesLayer.Concrete.Repositories
 
         public void Insert(T p)
         {
-            _object.Add(p);
+            var addEntity = _db.Entry(p);
+            addEntity.State = EntityState.Added;
             _db.SaveChanges();
         }
 
         public void Update(T p)
         {
-
+            var updateEntity = _db.Entry(p);
+            updateEntity.State = EntityState.Modified;
             _db.SaveChanges();
         }
 
         public void Delete(T p)
         {
-            _object.Remove(p);
+            var deleteEntity = _db.Entry(p);
+            deleteEntity.State = EntityState.Deleted;
             _db.SaveChanges();
             
         }
