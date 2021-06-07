@@ -132,9 +132,14 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\AdminCategoryController.cs" />
     <Compile Include="Controllers\CategoryController.cs" />
+    <Compile Include="Controllers\ContactController.cs" />
+    <Compile Include="Controllers\ContentController.cs" />
+    <Compile Include="Controllers\HeadingController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MessageController.cs" />
     <Compile Include="Controllers\StatisticsController.cs" />
     <Compile Include="Controllers\WriterController.cs" />
     <Compile Include="Global.asax.cs">
@@ -1151,6 +1156,7 @@
     <Content Include="AdminLTE-3.0.4\plugins\fullcalendar\main.min.js" />
     <Content Include="AdminLTE-3.0.4\plugins\icheck-bootstrap\icheck-bootstrap.css" />
     <Content Include="AdminLTE-3.0.4\plugins\icheck-bootstrap\icheck-bootstrap.min.css" />
+    <Content Include="AdminLTE-3.0.4\plugins\icheck-bootstrap\icheck-mailbox.js" />
     <Content Include="AdminLTE-3.0.4\plugins\inputmask\bindings\inputmask.binding.js" />
     <Content Include="AdminLTE-3.0.4\plugins\inputmask\inputmask.js" />
     <Content Include="AdminLTE-3.0.4\plugins\inputmask\inputmask.min.js" />
@@ -2279,6 +2285,21 @@
     <Content Include="Views\Writer\Index.cshtml" />
     <Content Include="Views\Writer\AddWriter.cshtml" />
     <Content Include="Views\Writer\EditWriter.cshtml" />
+    <Content Include="Views\Heading\Index.cshtml" />
+    <Content Include="Views\Heading\AddHeading.cshtml" />
+    <Content Include="Views\Content\ContentByHeading.cshtml" />
+    <Content Include="Views\Heading\EditHeading.cshtml" />
+    <Content Include="Views\About\Index.cshtml" />
+    <Content Include="Views\About\AboutPartialAdd.cshtml" />
+    <Content Include="Views\Contact\Index.cshtml" />
+    <Content Include="Views\Contact\GetContactDetails.cshtml" />
+    <Content Include="Views\Contact\ContactPartialMenu.cshtml" />
+    <Content Include="Views\Contact\ContentPartialHeader.cshtml" />
+    <Content Include="Views\Message\Inbox.cshtml" />
+    <Content Include="Views\Message\SendBox.cshtml" />
+    <Content Include="Views\Message\NewMessage.cshtml" />
+    <Content Include="Views\Message\GetInBoxMessageDetails.cshtml" />
+    <Content Include="Views\Message\GetSendBoxMessageDetails.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
