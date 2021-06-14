@@ -11,6 +11,7 @@ namespace MvcKamp.Controllers
     {
         private readonly CategoryManager _cm = new CategoryManager(new EfCategoryDal());
         // GET: Category
+        
         public ActionResult Index()
         {
             return View();

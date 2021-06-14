@@ -15,6 +15,7 @@ namespace MvcKamp.Controllers
     public class AdminCategoryController : Controller
     {
         private readonly CategoryManager _cm = new CategoryManager(new EfCategoryDal());
+        [Authorize(Roles = "B")]
         public ActionResult Index()
         {
             var categoryvalues = _cm.GetList();

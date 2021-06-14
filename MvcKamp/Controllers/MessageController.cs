@@ -16,6 +16,7 @@ namespace MvcKamp.Controllers
         // GET: Message
         private readonly MessageManager _mm = new MessageManager(new EfMessageDal());
         private readonly MessageValidator _validations = new MessageValidator();
+        [Authorize]
         public ActionResult Inbox()
         {
             var messageList = _mm.GetListInbox();
